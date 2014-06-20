@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>//アニメーション用フレームワーク
+#import "SVProgressHUD.h"//ぐるぐるのライブラリ
 
 @interface ViewController : UIViewController
+
+-(IBAction)startIndicator;//ぐるぐるスタート
+-(IBAction)stopIndicator;//ぐるぐるストップ
+
 
 @end

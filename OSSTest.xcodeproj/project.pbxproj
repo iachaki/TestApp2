@@ -21,6 +21,9 @@
 		089FFD6D193891BD0066E604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089FFD4F193891BD0066E604 /* UIKit.framework */; };
 		089FFD75193891BD0066E604 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089FFD73193891BD0066E604 /* InfoPlist.strings */; };
 		089FFD77193891BD0066E604 /* OSSTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 089FFD76193891BD0066E604 /* OSSTestTests.m */; };
+		089FFD85193892170066E604 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 089FFD82193892170066E604 /* SVProgressHUD.bundle */; };
+		089FFD86193892170066E604 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 089FFD84193892170066E604 /* SVProgressHUD.m */; };
+		089FFD88193893430066E604 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089FFD87193893430066E604 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		089FFD72193891BD0066E604 /* OSSTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSSTestTests-Info.plist"; sourceTree = "<group>"; };
 		089FFD74193891BD0066E604 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089FFD76193891BD0066E604 /* OSSTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSTestTests.m; sourceTree = "<group>"; };
+		089FFD81193892170066E604 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		089FFD82193892170066E604 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		089FFD83193892170066E604 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		089FFD84193892170066E604 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		089FFD87193893430066E604 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089FFD88193893430066E604 /* QuartzCore.framework in Frameworks */,
 				089FFD4E193891BD0066E604 /* CoreGraphics.framework in Frameworks */,
 				089FFD50193891BD0066E604 /* UIKit.framework in Frameworks */,
 				089FFD4C193891BD0066E604 /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		089FFD4A193891BD0066E604 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				089FFD87193893430066E604 /* QuartzCore.framework */,
 				089FFD4B193891BD0066E604 /* Foundation.framework */,
 				089FFD4D193891BD0066E604 /* CoreGraphics.framework */,
 				089FFD4F193891BD0066E604 /* UIKit.framework */,
@@ -112,6 +122,7 @@
 		089FFD51193891BD0066E604 /* OSSTest */ = {
 			isa = PBXGroup;
 			children = (
+				089FFD80193892170066E604 /* SVProgressHUD */,
 				089FFD5A193891BD0066E604 /* AppDelegate.h */,
 				089FFD5B193891BD0066E604 /* AppDelegate.m */,
 				089FFD5D193891BD0066E604 /* Main.storyboard */,
@@ -150,6 +161,17 @@
 				089FFD73193891BD0066E604 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		089FFD80193892170066E604 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				089FFD81193892170066E604 /* SVProgressHUD-Prefix.pch */,
+				089FFD82193892170066E604 /* SVProgressHUD.bundle */,
+				089FFD83193892170066E604 /* SVProgressHUD.h */,
+				089FFD84193892170066E604 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +253,7 @@
 				089FFD64193891BD0066E604 /* Images.xcassets in Resources */,
 				089FFD56193891BD0066E604 /* InfoPlist.strings in Resources */,
 				089FFD5F193891BD0066E604 /* Main.storyboard in Resources */,
+				089FFD85193892170066E604 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				089FFD62193891BD0066E604 /* ViewController.m in Sources */,
+				089FFD86193892170066E604 /* SVProgressHUD.m in Sources */,
 				089FFD5C193891BD0066E604 /* AppDelegate.m in Sources */,
 				089FFD58193891BD0066E604 /* main.m in Sources */,
 			);

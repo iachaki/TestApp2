@@ -26,4 +26,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)startIndicator
+{
+    //ぐるぐる表示！！
+    [SVProgressHUD show];
+}
+-(IBAction)stopIndicator
+{
+    //ぐるぐる非表示！！
+    [SVProgressHUD dismiss];
+}
+
 @end
